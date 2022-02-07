@@ -25,6 +25,9 @@
 		<img id="face4" src="images/face4.png" crossorigin="anonymous" />
 		<img id="face5" src="images/face5.png" crossorigin="anonymous" />
 		<img id="face6" src="images/face6.png" crossorigin="anonymous" />
+		<img id="kface" src="images/kface.jpg" crossorigin="anonymous" />
+		<img id="qface" src="images/qface.png" crossorigin="anonymous" />
+		<img id="jface" src="images/jface.jpg" crossorigin="anonymous" />
 		<a-asset-item id="chessKing" src="chess-piece-king/source/0b18c88202eb4f56857c0345f27b7260.obj"></a-asset-item>
 		<img id="chessKingMTL" src="chess-piece-king/textures/c81ff8ab37cf43099175d161e17aaa04.jpeg" crossorigin="anonymous" />
 	</a-assets>
@@ -58,12 +61,20 @@
 		multisrc="srcs:#face1,#face2,#face3,#face4,#face5,#face6"
 		shadow = "cast: true; receive: true">
 	</a-box>
+
+	***Card Faces***
 	
-<a-box width="1" height="1" depth="1" scale="0.315 0.56 -1.8" position="0.31 0.5 -1.8" rotation="0 -26.7 0" multisrc="srcs: #face1, #face2, #face3, #face4, #face5, #face6" shadow="" material="" geometry="height: 0.01; depth: 0.29">
+<a-box width="1" height="1" depth="1" scale="0.315 0.56 -1.8" position="0.31 0.5 -1.8" rotation="0 -26.7 0" shadow="" material="src: #kface" geometry="height: 0.01; depth: 0.29">
+	</a-box>
+	
+	<a-box width="1" height="1" depth="1" scale="0.315 0.56 -1.8" position="0.55391 0.5 -1.64799" rotation="1.26 -44.99 0" shadow="" material="src: #qface" geometry="height: 0.01; depth: 0.29">
+	</a-box>
+	
+	<a-box width="1" height="1" depth="1" scale="0.315 0.56 -1.8" position="0.71197 0.53013 -1.39299" rotation="7.36 -67.05 0" shadow="" material="src: #jface" geometry="height: 0.01; depth: 0.29">
 	</a-box>
 	
 	
-	
+	***card faces***
 	
 	
 	<a-entity
