@@ -5,7 +5,8 @@
 	<title>A-Frame - Image Textures</title>
 	<script src="js/aframe-master.1.0.4.min.js"></script>
 	<script src="https://cdn.rawgit.com/elbobo/aframe-multisrc-component/b6d23310/dist/0.3/aframe-multisrc-component.js"></script>
-	<script src="//cdn.rawgit.com/donmccurdy/aframe-extras/v3.8.3/dist/aframe-extras.min.js"></script>
+	<script src="https://cdn.rawgit.com/donmccurdy/aframe-extras/v3.8.3/dist/aframe-extras.min.js"></script>
+	<script src="https://github.com/n5ro/aframe-extras/blob/master/dist/aframe-extras.loaders.min.js"></script>
 </head>
 
 <body>
@@ -23,6 +24,7 @@
 		<img id="face4" src="images/face4.png" crossorigin="anonymous" />
 		<img id="face5" src="images/face5.png" crossorigin="anonymous" />
 		<img id="face6" src="images/face6.png" crossorigin="anonymous" />
+		<a-asset-item id="chessKing" src="chessKing/scene.gltf"></a-asset-item>
 	</a-assets>
 		
 	<a-sky 
@@ -56,7 +58,7 @@
 	
 	<a-entity
 		position = " 1 0.75 -3"
-		gltf-model=”url(/chessKing/scene.gltf )”>
+		gltf-model-next=”src: url(chessKing/scene.gltf);”
 		shadow = "cast: true; receive: true">
 	</a-entity>
 	
