@@ -5,6 +5,7 @@
 	<title>A-Frame - Image Textures</title>
 	<script src="js/aframe-master.1.0.4.min.js"></script>
 	<script src="https://cdn.rawgit.com/elbobo/aframe-multisrc-component/b6d23310/dist/0.3/aframe-multisrc-component.js"></script>
+	<script src="//cdn.rawgit.com/donmccurdy/aframe-extras/v3.8.3/dist/aframe-extras.min.js"></script>
 </head>
 
 <body>
@@ -53,13 +54,11 @@
 		shadow = "cast: true; receive: true">
 	</a-sphere>
 	
-	<a-cylinder
-		radius = "0.5" height = "1.5"
+	<a-entity
 		position = " 1 0.75 -3"
-		color = "#8888BB"
-		material = "src: #hexagons; repeat: 4 2;"
+		gltf-model=”url(/chessKing/scene.gltf )”>
 		shadow = "cast: true; receive: true">
-	</a-cylinder>
+	</a-entity>
 	
 </a-scene>
 </body>
