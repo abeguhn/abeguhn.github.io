@@ -5,11 +5,15 @@
     <a-scene antialias="true">
 	
 	<a-assets>
-		<img id="sky" src="images/stars.jpg" crossorigin="anonymous" />
-       	 	<img id="dusty_lake" src="images/dusty_lake.jpg" crossorigin="anonymous" />
-       		<img id="old_church" src="images/old_church.jpg" crossorigin="anonymous" />
-       	 	<img id="marriot" src="images/marriot.jpg" crossorigin="anonymous" />
-        	<img id="whisky_room" src="images/whisky_room.jpg" crossorigin="anonymous" />
+		<img id="outside_apartment" src="images/lolgreenbriar.jpg" crossorigin="anonymous" />
+		<img id="sky" src="images/sky.jpg" crossorigin="anonymous" />
+       	 	<img id="family_room" src="images/lolapartmenttime.jpg" crossorigin="anonymous" />
+       		<img id="basketball_court" src="images/6.jpg" crossorigin="anonymous" />
+       	 	<img id="casinotime" src="images/casinotime.jpg" crossorigin="anonymous" />
+		<a-asset-item id="parkinglot" src="images/Parking Lot.glb"></a-asset-item>
+		<a-asset-item id="dice" src="images/Dice.glb"></a-asset-item>
+		<a-asset-item id="basketball" src="images/Basketball.glb"></a-asset-item>
+		<a-asset-item id="livingroom" src="images/Living Room.glb"></a-asset-item>
 	</a-assets>
 		
 	<a-sky 
@@ -17,38 +21,42 @@
 		material = "src: #sky">
 	</a-sky>
     
-      <a-box
+      <a-entity
+	gltf-model="#parkinglot"     
         position="-2 2 -2"
         scale=".2 .2 .2"     
         rotation="0 45 0"
-        value="Nine O'Clock"
+        value="Parking Lot"
         align="center"
-        event-set__enter="_event: mouseenter; _target: a-sky; material.src: #old_church"      
-      ></a-box>  
-     <a-box
+        event-set__enter="_event: mouseenter; _target: a-sky; material.src: #outside_apartment"      
+      ></a-entity>  
+     <a-entity
+	gltf-model="#dice"         
         position="2 2 -2"
         scale=".2 .2 .2" 
         rotation="0 -45 0"
-        value="Three O'Clock"
+        value="Casino"
         align="center"
-        event-set__enter="_event: mouseenter; _target: a-sky; material.src: #dusty_lake"      
-      ></a-box>  
-     <a-box
+        event-set__enter="_event: mouseenter; _target: a-sky; material.src: #casinotime"      
+      ></a-entity>  
+     <a-entity
+	gltf-model="#livingroom"        
         position="0 2 2.5"
         scale=".2 .2 .2" 
         rotation="0 180 0"
-        value="Six O'Clock"
+        value="Family Room"
         align="center"
-        event-set__enter="_event: mouseenter; _target: a-sky; material.src: #whisky_room"     
-      ></a-box> 
-     <a-box
+        event-set__enter="_event: mouseenter; _target: a-sky; material.src: #family_room"     
+      ></a-entity> 
+     <a-entity
+	gltf-model="#basketball"          
         position="2 2 2.5"
         scale=".2 .2 .2" 
         rotation="0 180 0"
-        value="Six O'Clock"
+        value="Court"
         align="center"
-        event-set__enter="_event: mouseenter; _target: a-sky; material.src: #marriot"     
-      ></a-box> 
+        event-set__enter="_event: mouseenter; _target: a-sky; material.src: #basketball_court"     
+      ></a-entity> 
     <a-camera>
         <a-cursor color=#ff77ff></a-cursor>
     </a-camera>
