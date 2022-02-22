@@ -11,7 +11,7 @@
        		<img id="basketball_court" src="images/6.jpg" crossorigin="anonymous" />
        	 	<img id="casinotime" src="images/casinotime.jpg" crossorigin="anonymous" />
 		<a-asset-item id="parkinglot" src="images/Parking Lot.glb"></a-asset-item>
-		<a-asset-item id="dice" src="images/Dice.glb"></a-asset-item>
+		<a-asset-item id="dice2" src="images/Dice2.glb"></a-asset-item>
 		<a-asset-item id="basketball" src="images/Basketball.glb"></a-asset-item>
 		<a-asset-item id="livingroom" src="images/Living Room.glb"></a-asset-item>
 	</a-assets>
@@ -21,42 +21,11 @@
 		material = "src: #sky">
 	</a-sky>
     
-      <a-entity
-	gltf-model="#parkinglot"     
-        position="-2 2 -2"
-        scale=".2 .2 .2"     
-        rotation="0 45 0"
-        value="Parking Lot"
-        align="center"
-        event-set__enter="_event: mouseenter; _target: a-sky; material.src: #outside_apartment"      
-      ></a-entity>  
-     <a-entity
-	gltf-model="#dice"         
-        position="2 2 -2"
-        scale=".2 .2 .2" 
-        rotation="0 -45 0"
-        value="Casino"
-        align="center"
-        event-set__enter="_event: mouseenter; _target: a-sky; material.src: #casinotime"      
-      ></a-entity>  
-     <a-entity
-	gltf-model="#livingroom"        
-        position="0 2 2.5"
-        scale=".2 .2 .2" 
-        rotation="0 180 0"
-        value="Family Room"
-        align="center"
-        event-set__enter="_event: mouseenter; _target: a-sky; material.src: #family_room"     
-      ></a-entity> 
-     <a-entity
-	gltf-model="#basketball"          
-        position="2 2 2.5"
-        scale=".2 .2 .2" 
-        rotation="0 180 0"
-        value="Court"
-        align="center"
-        event-set__enter="_event: mouseenter; _target: a-sky; material.src: #basketball_court"     
-      ></a-entity> 
+      <a-entity gltf-model="images/Parking Lot.glb" position="-4.907 3.92895 -5.54143" scale="0.65506 0.73756 0.85435" rotation="34.50867504293435 -60.9833358825443 -57.53756770262753" value="Parking Lot" align="center" event-set__enter="_event: mouseenter; _target: a-sky; material.src: #outside_apartment"></a-entity>
+      <a-entity gltf-model="images/Living Room.glb" position="0.18821 2.55878 2.35579" scale="0.2 0.2 0.2" rotation="58.42507932728517 179.9998479605043 0" value="Family Room" align="center" event-set__enter="_event: mouseenter; _target: a-sky; material.src: #family_room"></a-entity>
+      <a-entity gltf-model="images/Basketball.glb" position="3.61022 2.42429 -3.06865" scale="1.0834 0.631 0.59714" rotation="0 180 0" value="Court" align="center" event-set__enter="_event: mouseenter; _target: a-sky; material.src: #basketball_court"></a-entity>    
+      <a-entity gltf-model="images/Dice2.glb" position="6.37433 2.62524 0.61703" scale="1.0834 0.631 0.59714" rotation="0 180 0" value="Dice" align="center" event-set__enter="_event: mouseenter; _target: a-sky; material.src: #casinotime"></a-entity>    
+   
     <a-camera>
         <a-cursor color=#ff77ff></a-cursor>
     </a-camera>
